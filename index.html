@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nishanth S — Software Developer Portfolio</title>
+<meta name="description" content="Portfolio of Nishanth S, Computer Science engineering student and software developer from Mysuru.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Loader -->
+<div class="loader" id="loader" aria-hidden="true"><div class="ring"></div><p class="load-text">NISHANTH S</p><div class="bar"><span></span></div></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="glow g1"></div><div class="glow g2"></div>
+<div class="progress" id="progress"></div>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <a href="#home" class="logo" aria-label="Home">NS<i>.</i></a>
+  <nav id="menu" aria-label="Primary">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle light and dark theme"><span id="themeIcon">☾</span></button>
+  <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+</header>
+
+<main>
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <p class="chip reveal">Computer Science Engineering Student · Software Developer</p>
+    <h1 class="hero-title"><span class="line" data-split>Nishanth S</span></h1>
+    <p class="typed reveal">I build <span id="typed"></span><span class="caret">|</span></p>
+    <p class="lead reveal">Full-stack developer from Mysuru with strong fundamentals in programming, databases, REST APIs and HTTP-based systems, and a systematic approach to tracing errors to their root cause across frontend, backend and database layers.</p>
+    <div class="cta reveal">
+      <a class="btn primary magnetic" href="#projects">View projects</a>
+      <a class="btn ghost magnetic" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <div class="hero-card glass reveal" aria-label="Quick facts">
+    <div class="orb"></div>
+    <ul>
+      <li><b>Mysuru, Karnataka</b><span>Open to relocating anywhere in India</span></li>
+      <li><b>B.E. Computer Science</b><span>Maharaja Institute of Technology, 2027</span></li>
+      <li><b>Python · JS · TypeScript</b><span>React, Next.js, FastAPI</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <h2 class="title reveal">About me</h2>
+  <div class="about-grid">
+    <div class="glass pad reveal">
+      <p>I am a Computer Science engineering student and software developer who builds and debugs API-driven, cloud-backed applications, with retry logic, error handling and automated tests built in from the start.</p>
+      <p>I am an analytical, persistent problem solver who can explain technical issues clearly to both technical and non-technical audiences. I communicate fluently in spoken and written English, and have led technical teams and mentored peers at scale.</p>
+      <p>I am eager to learn and grow in a customer-facing technical environment.</p>
+    </div>
+    <div class="stats">
+      <div class="glass stat reveal"><b data-count="8" data-suffix="+">0</b><span>Hackathons, ideathons, tech talks and gameathons</span></div>
+      <div class="glass stat reveal"><b data-count="250" data-suffix="+">0</b><span>Student participants across events</span></div>
+      <div class="glass stat reveal"><b data-count="14" data-suffix="+">0</b><span>Workshops, hackathons and programmes coordinated</span></div>
+      <div class="glass stat reveal"><b data-count="7.93" data-dec="2">0</b><span>CGPA in B.E. Computer Science</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section">
+  <h2 class="title reveal">Technical skills</h2>
+  <div class="skill-grid" id="skillGrid">
+    <article class="glass pad reveal"><h3>Languages</h3><div class="tags"><span>Python</span><span>JavaScript</span><span>TypeScript</span></div></article>
+    <article class="glass pad reveal"><h3>Frameworks</h3><div class="tags"><span>HTML5</span><span>CSS3</span><span>Next.js</span><span>React</span><span>FastAPI</span></div></article>
+    <article class="glass pad reveal"><h3>Databases</h3><div class="tags"><span>Oracle Database</span><span>MySQL</span><span>Supabase</span></div></article>
+    <article class="glass pad reveal"><h3>APIs &amp; AI/ML</h3><div class="tags"><span>REST APIs</span><span>GraphQL (Hasura)</span><span>Scikit-learn</span></div></article>
+    <article class="glass pad reveal"><h3>Tools</h3><div class="tags"><span>Git</span><span>GitHub</span></div></article>
+    <article class="glass pad reveal"><h3>Working strengths</h3><div class="tags"><span>Troubleshooting</span><span>Root-cause analysis</span><span>Clear communication</span><span>Mentoring</span><span>Team leadership</span></div></article>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <h2 class="title reveal">Projects</h2>
+  <div class="filters reveal" role="group" aria-label="Filter projects">
+    <button class="fbtn active" data-f="all">All</button><button class="fbtn" data-f="ai">AI</button><button class="fbtn" data-f="fullstack">Full-stack</button><button class="fbtn" data-f="social">Social impact</button>
+  </div>
+  <div class="proj-grid">
+    <article class="glass card tilt reveal" data-cat="ai fullstack">
+      <span class="badge">Featured</span>
+      <h3>Chainly</h3><p class="sub">Multi-tenant AI agent workflow orchestration platform</p>
+      <div class="tags sm"><span>Next.js</span><span>React</span><span>Apollo Client</span><span>Node/Express</span><span>Hasura GraphQL</span><span>PostgreSQL</span><span>Nhost Auth</span><span>Groq</span></div>
+      <button class="more" aria-expanded="false">Show details</button>
+      <ul class="details"><li>Built a full-stack, multi-tenant workflow automation engine (n8n/Zapier-style) with six step types (LLM calls, HTTP requests, conditional branching, DB writes, approval gates) and a custom execution runner with retry logic, error handling for failed steps, and Postgres-backed pause/resume state machines.</li><li>Designed a two-layer authorization model: Hasura row-level permissions via org-membership joins, plus application-layer checks for privileged steps and approval gates. Wrote automated cross-org isolation tests to verify no data leaks between organisations.</li><li>Implemented dual triggers (authenticated Hasura Actions and HMAC-secured webhooks that reject unauthenticated requests) and a live execution dashboard using GraphQL subscriptions to stream real-time status, including failures.</li></ul>
+    </article>
+    <article class="glass card tilt reveal" data-cat="ai fullstack">
+      <span class="badge">Featured</span>
+      <h3>AI Interview System</h3><p class="sub">Real-time mock interview platform with facial and speech analytics</p>
+      <div class="tags sm"><span>Next.js</span><span>React</span><span>FastAPI</span><span>PostgreSQL</span><span>Groq (Llama 3.3 70B)</span><span>MediaPipe</span><span>Three.js</span></div>
+      <button class="more" aria-expanded="false">Show details</button>
+      <ul class="details"><li>Built a full-stack AI mock-interview platform with a FastAPI + PostgreSQL backend (SQLAlchemy ORM, JWT-based auth with bcrypt password hashing) and a Next.js/React frontend rendering a 3D avatar interviewer via Three.js and React Three Fiber.</li><li>Integrated Groq's Llama 3.3 70B to dynamically generate role- and difficulty-specific interview questions, evaluate free-text answers in real time, and produce a natural-language performance summary from session metrics.</li><li>Built a real-time webcam analytics pipeline using MediaPipe Face Mesh and face-api.js to track eye contact, smile frequency and emotion per frame, feeding a rule-based scoring engine (confidence, eye contact, speech clarity) visualized through Chart.js dashboards.</li></ul>
+    </article>
+    <article class="glass card tilt reveal" data-cat="ai fullstack">
+      <h3>SkySmart</h3><p class="sub">AI-powered flight booking and fare intelligence platform</p>
+      <div class="tags sm"><span>React</span><span>TypeScript</span><span>Supabase</span><span>Hono</span><span>LLM API</span></div>
+      <button class="more" aria-expanded="false">Show details</button>
+      <ul class="details"><li>Built a full-stack flight booking platform integrating a real-time flight/fare API with a Supabase backend for auth, persistence and edge functions, delivering live search, booking and fare-tracking across routes.</li><li>Integrated an LLM-powered recommendation engine that analyzes fare trends and user preferences to surface personalized flight suggestions and trigger price-drop alerts.</li></ul>
+    </article>
+    <article class="glass card tilt reveal" data-cat="social fullstack">
+      <h3>TrustServe</h3><p class="sub">Smart food redistribution platform</p>
+      <div class="tags sm"><span>React</span><span>Vite</span><span>Tailwind CSS</span><span>Supabase</span></div>
+      <button class="more" aria-expanded="false">Show details</button>
+      <ul class="details"><li>Built a platform connecting food donors with NGOs and shelters, implementing geo-based matching to route surplus food to the nearest eligible recipient and reduce urban food waste.</li><li>Implemented a QR-verified exchange system to confirm pickup/delivery at both ends, paired with a review and complaint pipeline feeding into a trust-scoring mechanism for donors and recipients.</li></ul>
+    </article>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section">
+  <h2 class="title reveal">Education</h2>
+  <ol class="timeline">
+    <li class="reveal"><time>Sept 2023 – 2027 (Expected)</time><div class="glass pad"><h3>Bachelor of Engineering, Computer Science and Engineering</h3><p>Maharaja Institute of Technology, Mysore</p><strong>CGPA 7.93</strong></div></li>
+    <li class="reveal"><time>Pre University</time><div class="glass pad"><h3>Manasarowar Pushkarini Vidyashram</h3><strong>78%</strong></div></li>
+    <li class="reveal"><time>School · Class 10, ICSE Board</time><div class="glass pad"><h3>Notre Dame</h3><strong>86%</strong></div></li>
+  </ol>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="section">
+  <h2 class="title reveal">Experience</h2>
+  <div class="glass pad exp reveal">
+    <div class="exp-head"><h3>Python Full Stack Intern</h3><time>September 2026 – November 2026</time></div>
+    <p class="sub">QSpiders, Mysore · StackForge Coding Club, Maharaja Institute of Technology, Mysore</p>
+    <ul class="plain">
+      <li>Took ownership of planning and executing 2 large-scale technical events at the college level, overseeing logistics and cross-team coordination, and following each through to closure with end-to-end delivery.</li>
+      <li>Coordinated 14+ workshops, hackathons and developer programmes involving over 250 student participants, explaining technical concepts and resolving participant queries along the way.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Achievements & Certifications -->
+<section id="achievements" class="section">
+  <h2 class="title reveal">Achievements &amp; certifications</h2>
+  <div class="two">
+    <div>
+      <h3 class="sub-title reveal">Achievements</h3>
+      <div class="glass medal reveal"><b>2nd Prize</b><span>Cyber Sense, an intercollegiate cybersecurity quiz competition (2025)</span></div>
+      <div class="glass medal reveal"><b>Top 5</b><span>Among 100+ teams at JIT, Bangalore Gameathon 2024</span></div>
+      <div class="glass medal reveal"><b>8+ events</b><span>Participated in hackathons, ideathons, tech talks and gameathons</span></div>
+    </div>
+    <div>
+      <h3 class="sub-title reveal">Certifications</h3>
+      <div class="glass medal reveal"><b>Applied Machine Learning in Python</b><span>University of Michigan (Coursera)</span></div>
+      <div class="glass medal reveal"><b>Developing Front-End Applications with React</b><span>IBM (Coursera)</span></div>
+      <div class="glass medal reveal"><b>Programming with JavaScript</b><span>Meta (Coursera)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <h2 class="title reveal">Let's talk</h2>
+  <p class="lead reveal">Open to opportunities in customer-facing technical roles, with the flexibility to relocate anywhere in India.</p>
+  <div class="contact-grid">
+    <a class="glass link reveal" href="mailto:nishanth67923@gmail.com"><b>Email</b><span>nishanth67923@gmail.com</span></a>
+    <a class="glass link reveal" href="tel:+917975057085"><b>Phone</b><span>+91 7975057085</span></a>
+    <a class="glass link reveal" href="https://linkedin.com/in/nishanths288" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b><span>linkedin.com/in/nishanths288</span></a>
+    <a class="glass link reveal" href="https://github.com/Nishanth17S" target="_blank" rel="noopener noreferrer"><b>GitHub</b><span>github.com/Nishanth17S</span></a>
+    <a class="glass link reveal" href="https://nishanths-portfolio.netlify.app" target="_blank" rel="noopener noreferrer"><b>Portfolio</b><span>nishanths-portfolio.netlify.app</span></a>
+    <button class="glass link reveal" id="copyMail" type="button"><b>Copy email</b><span id="copyMsg">Click to copy address</span></button>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><p>© <span id="year"></span> Nishanth S · Mysuru, Karnataka</p><a href="#home">Back to top</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
